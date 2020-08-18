@@ -4,7 +4,6 @@ var bodyParser=require("body-parser");
 var mongoose = require("mongoose");
 var methodOverride=require("method-override");
 var expressSanitizer=require("express-sanitizer");
-
 mongoose.connect("mongodb://localhost:27017/blog_app", {useNewUrlParser: true,useUnifiedTopology: true});
 
 blogapp.use(bodyParser.urlencoded({extended: true}));
